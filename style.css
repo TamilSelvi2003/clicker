@@ -1,0 +1,44 @@
+.container-1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .table {
+    display: grid;
+    width:50% ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4px;
+    float: left;
+  }
+  
+  .button {
+    padding: 20px;
+    border: none;
+    background-color: rgba(167, 181, 184, 0.295);
+  }
+  
+  .container-2 {
+
+    float: right;
+    padding: 20px;
+    background-color: #57aa57;
+    width: 50%;
+    height: 260px;
+    
+  }
+  @media(max-width:400px){
+    
+    .container-1{
+      display: flex;
+      flex-direction: column-reverse;
+    }  
+    .table{
+      height: 50vh;
+      width: 100%;
+    }
+    .container-2{
+      background-color: 57aa57;
+      height: 50vh;
+      width: 100%;
+    }
+}
